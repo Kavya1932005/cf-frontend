@@ -1,4 +1,4 @@
-const API_URL = 'https://customerfeedback-system.onrender.com/api/reviews';
+const API_URL = 'https://customerfeedback-system-1.onrender.com/api/reviews';
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 
