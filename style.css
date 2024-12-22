@@ -130,9 +130,8 @@ form {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(119, 106, 106, 0.1);
     border-radius: 8px;
-    width: 100%;
-    max-width: 380px;
-    margin: 50px auto;
+    width: 380px;
+    margin-top: 50px;
 }
 
 form input,
@@ -154,20 +153,6 @@ form button {
 
 form button:hover {
     background-color: #0056b3;
-}
-
-@media (max-width: 768px) {
-    form {
-        padding: 15px;
-        width: 90%;
-    }
-
-    form input,
-    form textarea,
-    form button {
-        font-size: 14px;
-        padding: 10px;
-    }
 }
 
 
@@ -211,6 +196,7 @@ form button:hover {
     color: var(--secondary-color);
 }
 
+
 @media (max-width: 768px) {
     #averageRating {
         width: 90%; 
@@ -233,22 +219,24 @@ form button:hover {
 }
 
 
+
 #feedbackList {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 0;
     margin: 0;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 70px;
 }
 
 .feedback-item {
+    
     background-color: #f9f9f9;
     padding: 15px;
-    width: 100%;
-    max-width: 380px;
+    width: 30%;
+    max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-left: 5px solid var(--primary-color);
@@ -256,9 +244,15 @@ form button:hover {
     margin-bottom: 10px;
 }
 
+@media (max-width: 1024px) {
+    .feedback-item {
+        width: 45%;
+    }
+}
+
 @media (max-width: 768px) {
     .feedback-item {
-        width: 90%;
+        width: 100%;
     }
 }
 
