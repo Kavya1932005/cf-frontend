@@ -17,14 +17,14 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--background-color);
 }
 
 nav {
-    position:fixed;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -131,7 +131,7 @@ form {
     box-shadow: 0 4px 6px rgba(119, 106, 106, 0.1);
     border-radius: 8px;
     width: 380px;
-    margin-top: 50px;
+    margin-top: 80px; /* Added margin to avoid hiding by navbar */
 }
 
 form input,
@@ -228,11 +228,9 @@ form button:hover {
     padding: 0;
     margin: 0;
     width: 100%;
-    margin-top: 70px;
-}
+    margin-top: 60px; }
 
 .feedback-item {
-    
     background-color: #f9f9f9;
     padding: 15px;
     width: 30%;
